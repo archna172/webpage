@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Bootstrap Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<body>
+    <style>
+        .nav-tabs .nav-item {
+            margin: 10px;
+
+        }
+
+        .nav {
+            color: white;
+            font-weight: bold;
+        }
+
+        .card1 .card-title {
+            color: green;
+        }
+
+        .card-body {
+            background-color: rgb(224, 224, 223);
+        }
+
+        .card1 .btn {
+            display: block;
+            margin: 0 auto;
+        }
+        .card-two{
+            width: 70%;
+        }
+        .custom-card .card-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.custom-card h1 {
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.custom-card p {
+    font-weight: bold;
+    color: white;
+    margin: 0; 
+    margin-top: 10px;
+}
+
+
+.card2 .card-title{
+    text-align: center;  
+    
+}
+.card2 .btn{
+    
+    justify-content: flex-end;
+}
+.img-card img {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+}
+
+.img-card .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.img-card .card-title h1 {
+    margin: 0; 
+    font-size: 30px;
+}
+
+.img-card .card-title p {
+    margin-top: 10px; 
+    font-size: 14px; 
+}
+.card3 .card-title{
+    text-align: center;
+}
+.card3 .btn{
+    justify-content: center;
+}
+/* Center the button for the first and last cards */
+.btn-center {
+    display: block;
+    margin: 0 auto; /* Centers the button horizontally */
+}
+
+
+.card3 {
+    height: 100%;
+}
+
+
+.card3 .card-body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between;  */
+    height: 100%; 
+}
+
+
+.card3 .card-body .btn {
+    margin-top: auto; 
+}
+
+        .contact-form-container {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRH7VZWvwjsnzKHaS7SYrZT59c_maC80GzJw&s');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-form {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+            padding: 30px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .contact-form h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-floating {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            height: 45px;
+        }
+
+        button {
+            margin-top: 10px;
+        }
+</style>
+    <ul class="nav nav-tabs justify-content-center bg-dark">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Aboutus</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Booking</a>
+        </li>
+    </ul>
+    <div></div>
+    <div class="card custom-card">
+        <img src="https://t4.ftcdn.net/jpg/01/75/97/39/360_F_175973930_FOfQM7zFXsVuFLlz1H4PrU4YGZX14oFA.jpg"
+            class="card-img-top" alt="">
+        <div class="card-img-overlay">
+            <div class="card-title">
+                <h1 >CONQUER</h1>
+                <p>Your journey to success starts here.</p>
+            </div>
+            <div class="card-text"></div>
+        </div>
+    </div>
+    
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-4">
+                <div class="card card1" style="width: 18rem;">
+                    <img src="https://images.pexels.com/photos/206359/pexels-photo-206359.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card card1" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIZNwkVeiQKXOOwBlhxTxULFuQlhLXWu56Cg&s"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-info">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card card1" style="width: 18rem;">
+                    <img src="https://t3.ftcdn.net/jpg/08/88/51/12/360_F_888511226_wyCjO0FBGV1k3rwMo8dieA6SWwRlHuxV.jpg"
+                        class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-danger">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6">
+    <div class="card card2">
+        <img src="https://cdn.pixabay.com/photo/2024/02/22/05/40/natural-scenery-8589164_960_720.jpg" class="card-img-top" alt="">
+        <div class="card-body">
+          <h5 class="card-title">Two columns left side</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nam ea fuga quos assumenda, maxime sit modi pariatur asperiores velit porro similique, sequi corrupti, illum error vitae ipsa. Ratione, quas.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam mollitia incidunt aut odio, veritatis facere nam, voluptatem aliquid repellendus voluptas autem fugiat optio non, assumenda consequuntur exercitationem voluptatibus. Saepe, eligendi.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card card2">
+        <img src="https://cdn.pixabay.com/photo/2024/02/22/05/40/natural-scenery-8589164_960_720.jpg" class="card-img-top" alt="">
+    
+        <div class="card-body">
+          <h5 class="card-title ">Two columns left side</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vitae reiciendis quae voluptatum eius possimus, animi, vel ea enim illo perferendis iste odio? Cum ab perferendis, est illum cupiditate aliquam?.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut excepturi corporis, eius doloribus minima quisquam consectetur. Optio possimus tempora necessitatibus voluptates amet eaque sunt. Magni pariatur tenetur laboriosam doloribus reprehenderit?
+          </p>
+          <a href="#" class="btn btn-light ">Download</a>
+        </div>
+        
+      </div>
+    </div>
+</div>
+<div class="card img-card mt-3">
+    <img src="https://t4.ftcdn.net/jpg/01/75/97/39/360_F_175973930_FOfQM7zFXsVuFLlz1H4PrU4YGZX14oFA.jpg"
+        class="card-img-top" alt="">
+    <div class="card-img-overlay">
+        <div class="card-title">
+            <h1 >OUR SERVICES</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+        </div>
+        <div class="card-text"></div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-3">
+            <div class="card card3" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPQSXMCo1hGnM0iDmKM94ZEepCtuYvfToEw&s"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Column1</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's </content></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card card3" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPQSXMCo1hGnM0iDmKM94ZEepCtuYvfToEw&s"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Column1</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-light ">click</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card card3" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPQSXMCo1hGnM0iDmKM94ZEepCtuYvfToEw&s"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Column1</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                        
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card card3" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPQSXMCo1hGnM0iDmKM94ZEepCtuYvfToEw&s"
+                    class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Column1</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+                    <a href="#" class="btn btn-light">click</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
+<div class="container mt-4">
+    <div class="row">
+<div class="col-12">
+    <div class="card card4" style="width: 100%;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxzf736Lzu9lYdEjVZFhXnSN4lg4HCaWUayg&s"
+            class="card-img-top" alt="">
+        <div class="card-body">
+            <h5 class="card-title">One big column</h5>
+            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem ad voluptas architecto recusandae quaerat quam explicabo corrupti quas exercitationem magnam. Cum, ex nesciunt doloribus qui nisi debitis perferendis placeat dolorem.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita dolorum tenetur sapiente ex molestias incidunt inventore atque at eius fugit vitae, sint, quis adipisci illo. Omnis non vitae illo commodi?Some quick example text to build on the card title and make up the bulk of
+                the card's content.</p>
+            <a href="#" class="btn btn-light">click</a>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+<!-- <div class="container">
+    <div class="form-floating mb-3 mt-3">
+        <input type="text" placeholder="enter Username" class="form-control">
+        <label class="form-label">Username</label>
+    </div>
+ </div>
+ <div class="container">
+    <div class="form-floating mb-3 mt-3">
+        <input type="password" placeholder="enter password" class="form-control">
+        <label class="form-label">Password</label>
+    </div> -->
+    <div class="contact-form-container">
+        <div class="contact-form">
+            <h3>Contact</h3>
+            <form>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px;"></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+    
+
+</body>
+
+</html>
